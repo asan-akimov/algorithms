@@ -3,6 +3,16 @@
 Created on Thu Sep 14 10:02:47 2023
 
 @author: asan-akimov
+
+Assume s is a string of lower case characters.
+
+Write a program that prints the longest substring of s in which the letters occur in alphabetical order. For example, if s = 'azcbobobegghakl', then your program should print
+
+Longest substring in alphabetical order is: beggh
+In the case of ties, print the first substring. For example, if s = 'abcbcd', then your program should print
+
+Longest substring in alphabetical order is: abc
+
 """
 
 
@@ -30,7 +40,7 @@ s2 = 'abcbcd'
 s3 = 'abcdefghijklmnopqrstuvwxyz'
 s4 = 'gypijwnvcijk'
 
-print(las(s1))
-print(las(s2))
-print(las(s3))
-print(las(s4))
+print(las(s1)) # beggh
+print(las(s2)) # abc
+print(las(s3)) # abcdefghijklmnopqrstuvwxyz
+print(las(s4)) # cijk
